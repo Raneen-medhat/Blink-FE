@@ -1,0 +1,32 @@
+@import './../../scss/variables'; 
+#sideMenu {
+    width: 80px;
+    height: 100vh;
+    background: $primary_color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    .mainIcon {
+        width: 100%;
+        .iconContainer {
+            padding: 20px 0;
+            width: 100%;
+            cursor: pointer;
+            &.selected {
+                background: #ffffff6b;
+            }
+            &:hover {
+                background: #7ddee447;
+            }
+        }
+    }
+    .svgIcon {
+        color: $white_color;
+        width: 30px;
+
+    }
+    .logout {
+        padding: 20px 0;
+    }
+}
