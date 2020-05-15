@@ -1,15 +1,23 @@
 import React from 'react';
 import { sideMenuIcons } from './../../utils/data-source';
+import { ReactComponent as LogoutIcon } from './../../assets/images/logout.svg';
 import './side_menu.scss';
 
 const Side_menu = () => {
     const renderSideMenuIcons = () => {
        return sideMenuIcons.map((Icon, index) => {
-            return <Icon key={index}/>
+            return <div className={`iconContainer ${index === 1 && 'selected'}`}>
+                        <Icon className='svgIcon' key={index}/>
+                    </div>
         })
     };
     return (
-        <section id='side_menu'> {renderSideMenuIcons()} </section>
+        <section id='sideMenu'> 
+            <div className='mainIcon'>
+                {renderSideMenuIcons()} 
+            </div>
+            <LogoutIcon className='svgIcon logout'/>
+        </section>
     )
 }
 
