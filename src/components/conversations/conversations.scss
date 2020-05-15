@@ -1,0 +1,24 @@
+@import './../../scss/variables';
+#conversations {
+    width: 380px;
+    .mainHeader {
+        display: flex;
+        background: #aaaaaa;
+        color: $white_color;
+        height: 71px;
+        padding: 0 20px;
+        justify-content: space-between;
+        align-items: center;
+        h3 {
+            font-size: 1em;
+        }
+        .svgIcon {
+            color: $white_color;
+            width: 30px;
+        }
+    }
+    .conversation-list{
+        overflow-y: auto;
+        max-height: 100vh;
+    }
+}

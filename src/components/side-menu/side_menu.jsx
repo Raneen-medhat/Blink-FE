@@ -6,8 +6,8 @@ import './side_menu.scss';
 const Side_menu = () => {
     const renderSideMenuIcons = () => {
        return sideMenuIcons.map((Icon, index) => {
-            return <div className={`iconContainer ${index === 1 && 'selected'}`}>
-                        <Icon className='svgIcon' key={index}/>
+            return <div key={index} className={`iconContainer ${index === 1 && 'selected'}`}>
+                        <Icon className='svgIcon' />
                     </div>
         })
     };
