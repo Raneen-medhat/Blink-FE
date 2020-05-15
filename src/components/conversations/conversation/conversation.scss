@@ -1,0 +1,56 @@
+@import './../../../scss/variables';
+.conversation-container {
+    display: flex;
+    align-items: center;
+    height: 75px;
+    background: #ecf2f2;
+    border-bottom: 1px solid #aaaaaa;
+    cursor: pointer;
+    &.selected {
+       background: #ecf2f2;
+    }
+    .image-container {
+        height: 45px;
+        margin: 0 10px;
+        img {
+            height: 100%;
+        }
+    }
+    .conversation-info {
+        width: 100%;
+        padding-right: 15px;
+        .header {
+            display: flex;
+            justify-content: space-between;
+            .name {
+                font-size: 15px;
+                color: #666666;
+            }
+            .date {
+                font-size: 11px;
+                color: #9b9f9f;
+            }
+        }
+        .senderName {
+                color: #666666;
+                font-style: italic;
+                font-size: 12px;
+        }
+        .message {
+            display: flex;
+            justify-content: space-between;
+            .content {
+                color: #9b9f9f;
+                font-size: 15px;
+            }
+            .number{
+                background: #608a8b;
+                color: $white_color;
+                width: 25px;
+                text-align: center;
+                border-radius: 5px;
+                font-size: 14px;
+            }
+        }
+    }
+}
