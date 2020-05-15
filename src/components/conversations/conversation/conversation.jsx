@@ -1,24 +1,23 @@
 import React from 'react';
 import './conversation.scss'
-const Conversation = () => {
+const Conversation = (props) => {
+    const { isGroup, groupName, senderName, avatar, date, message, numberOfMessages } = props.data;
     return (
         <div className="conversation-container">
             <div className="image-container">
-                <img src={require('./../../../assets/images/avatar.png')} alt='Avatar' />
+                <img src={avatar} alt='Avatar' />
             </div>
             <div className="conversation-info">
                 <div className="header">
                     <div className="name">
-                        Mom’s Diet
-                            </div>
-                    <div className="date">
-                        Oct 12
-                            </div>
+                        {isGroup ? groupName : senderName}
+                    </div>
+                    <div className="date"> {date ? date : '---'} </div>
                 </div>
-                <div className="senderName">Karen Becker</div>
+               {isGroup && <div className="senderName">{senderName}</div>}
                 <div className="message">
-                    <div className="content">Sed mollis mi iaculis tincidu...</div>
-                    <div className="number">2</div>
+                    <div className="content">{message}</div>
+                    {numberOfMessages && <div className="number">{numberOfMessages}</div>}
                 </div>
             </div>
         </div>

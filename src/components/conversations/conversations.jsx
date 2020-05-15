@@ -1,7 +1,8 @@
 import React from 'react';
 import { ReactComponent as ConversationIcon } from './../../assets/images/conversation.svg';
+import { conversationsList } from './../../utils/data-source';
 import Conversation from './conversation/conversation';
-import './conversations.scss'
+import './conversations.scss';
 const Conversations = () => {
     return (
         <section id='conversations'>
@@ -10,7 +11,9 @@ const Conversations = () => {
                 <ConversationIcon  className='svgIcon'/>
             </div>
             <div className="conversation-list">
-                <Conversation/>
+                { conversationsList.map((conversation, index) => {
+                    return <Conversation data={conversation} key={index} />
+                })}
               </div>
         </section>
     )
