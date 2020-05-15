@@ -17,4 +17,8 @@
             width: 30px;
         }
     }
+    .conversation-list{
+        overflow-y: auto;
+        max-height: 100vh;
+    }
 }

@@ -3,11 +3,14 @@
     display: flex;
     align-items: center;
     height: 75px;
-    background: #ecf2f2;
     border-bottom: 1px solid #aaaaaa;
     cursor: pointer;
     &.selected {
        background: #ecf2f2;
+    }
+    &:hover {
+       background: #5bafb433;
+       transition: ease-in 1s;
     }
     .image-container {
         height: 45px;

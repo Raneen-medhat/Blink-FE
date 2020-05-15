@@ -1,9 +1,9 @@
 import React from 'react';
 import './conversation.scss'
 const Conversation = (props) => {
-    const { isGroup, groupName, senderName, avatar, date, message, numberOfMessages } = props.data;
+    const {id, isGroup, groupName, senderName, avatar, date, message, numberOfMessages } = props.data;
     return (
-        <div className="conversation-container">
+        <div className={`conversation-container ${id == 1 && 'selected'}`}>
             <div className="image-container">
                 <img src={avatar} alt='Avatar' />
             </div>
