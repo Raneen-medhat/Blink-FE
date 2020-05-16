@@ -1,3 +1,61 @@
 body {
     font-size: 16px;
 }
+.ml-auto {
+    margin-left: auto;
+}
+.text-center {
+    text-align: center;
+}
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
+
+.row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.messageFooter {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    color: #666666;
+    margin-left: -40px;
+    &.me {
+        margin-left: 0;
+        margin-right: -40px;
+    } 
+    .avatar {
+        display: flex;
+        align-items: center;
+        img {
+            width: 20px;
+            margin: 0 10px;
+        }
+    }
+}
+
+
+  /* width */
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  // Scroll bar
+  ::-webkit-scrollbar-track {
+    background: #eeeeee;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #c6d3d5;
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #eeeeee;
+  }
+  

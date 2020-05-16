@@ -1,9 +1,9 @@
 import React from 'react';
-import './conversation.scss'
+import './conversation.scss';
 const Conversation = (props) => {
     const {id, isGroup, groupName, senderName, avatar, date, message, numberOfMessages } = props.data;
     return (
-        <div className={`conversation-container ${id == 1 && 'selected'}`}>
+        <div className={`conversation-container ${id === 1 && 'selected'}`}>
             <div className="image-container">
                 <img src={avatar} alt='Avatar' />
             </div>
@@ -15,7 +15,7 @@ const Conversation = (props) => {
                     <div className="date"> {date ? date : '---'} </div>
                 </div>
                {isGroup && <div className="senderName">{senderName}</div>}
-                <div className="message">
+                <div className="message-wrapper">
                     <div className="content">{message}</div>
                     {numberOfMessages && <div className="number">{numberOfMessages}</div>}
                 </div>
