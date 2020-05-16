@@ -7,7 +7,7 @@ const Conversations = () => {
     return (
         <section id='conversations'>
             <div className="mainHeader">
-                <h3>Conversations</h3>
+                <h3 className='light'>Conversations</h3>
                 <ConversationIcon  className='svgIcon'/>
             </div>
             <div className="conversation-list">

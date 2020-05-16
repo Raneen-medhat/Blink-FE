@@ -1,15 +1,15 @@
 import React from 'react';
-import Side_menu from './components/side-menu/side_menu';
+import SideMenu from './components/sideMenu/sideMenu';
 import Conversations from './components/conversations/conversations';
-import Conversation_details from './components/conversations/conversation-details/conversation_details';
+import ConversationDetails from './components/conversations/conversationDetails/conversationDetails';
 import './scss/base.scss';
 import './App.scss';
 function App() {
   return (
     <div className="App">
-      <Side_menu/>
+      <SideMenu/>
       <Conversations/>
-      <Conversation_details/>
+      <ConversationDetails/>
     </div>
   );
 }
