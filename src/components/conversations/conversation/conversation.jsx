@@ -15,7 +15,7 @@ const Conversation = (props) => {
                     <div className="date"> {date ? date : '---'} </div>
                 </div>
                {isGroup && <div className="senderName">{senderName}</div>}
-                <div className="message">
+                <div className="message-wrapper">
                     <div className="content">{message}</div>
                     {numberOfMessages && <div className="number">{numberOfMessages}</div>}
                 </div>

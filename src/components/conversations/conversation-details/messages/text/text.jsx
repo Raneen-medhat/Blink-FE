@@ -1,15 +1,21 @@
 import React from 'react';
+import { currentUserId } from './../../../../../utils/auth';
 import './text.scss';
-const Text = () => {
+const Text = (props) => {
+    const { content: {message, createdBy}} = props.data;
     return (
-        <>
-            <div className="text">
-                <p>I moved Karen’s knitting kit from the study upstairs to the the living room.</p>
+        <div className={`message relative ${currentUserId === createdBy.userId && 'ml-auto'}`}>
+            <div className={`text ${currentUserId === createdBy.userId && 'me'}`}>
+                <p>{message}</p>
             </div>
-            <div className="text ml-auto me">
-                <p>That’s a good call. I’ll be stopping by later to have dinner with her. Pizza for everyone! Join us. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a lorem enim. Praesent accumsan feugiat lorem et finibus. Vestibulum scelerisque id eros dignissim tincidunt. Morbi id tortor egestas, feugiat massa viverra, posuere nisl.</p>
+            <div className={`absolute messageFooter ${currentUserId === createdBy.userId && 'row-reverse'}`}>
+                <div className="avatar">
+                    <img src={`${createdBy.avatar || 'assets/images/avatar2.png'}`} alt="group" />
+                    <p>{createdBy.time}</p>
+                </div>
+                <p className='name'>{createdBy.name}</p>
             </div>
-        </>
+        </div>
     )
 }
 

@@ -1,36 +1,47 @@
 import React from 'react';
+import { currentUserId } from './../../../../../utils/auth';
 import './action.scss';
-const Action = () => {
+const Action = (props) => {
+    const { content: { headline, date, continues, note, status, createdBy } } = props.data;
     return (
-        <div className="message action ml-auto">
-            <div className="headline">Daily grooming assistance</div>
-            <div className="date">
-                <img src="assets/images/date.png" alt="date" />
-                <div className="content">
-                    <p>Dec 1</p>
-                    <p>Daily</p>
-                </div>
-            </div>
-            <div className="note">
-                <img src='assets/images/notes.png' className='icon' alt="notes" />
-                <p className='noteName'>assist with daily grooming activities such as bathing, teeth, hair</p>
-            </div>
-            <div className="footer">
-                <div className="status">
-                    <img src='assets/images/check.png' className='icon' alt="notes" />
-                    done</div>
-                <div className="createdBy">
-                    <div className="imageContainer">
-                        <img src='assets/images/avatar2.png' alt="group" />
-                    </div>
-                    <div className="info">
-                        <div className="name">Derek Smith completed</div>
-                        <div>Mar 23 3:23p</div>
+        <div className={`message relative ${currentUserId === createdBy.userId && 'ml-auto'}`}>
+            <div className="action ">
+                <div className="headline">{headline}</div>
+                <div className="date">
+                    <img src="assets/images/date.png" alt="date" />
+                    <div className="content">
+                        <p>{date}</p>
+                        <p>{continues}</p>
                     </div>
                 </div>
+                <div className="note">
+                    <img src='assets/images/notes.png' className='icon' alt="notes" />
+                    <p className='noteName'>{note}</p>
+                </div>
+                <div className="footer">
+                    <div className="status">
+                        <img src={`${status.icon || 'assets/images/check.png'}`} className='icon' alt="notes" />
+                        {status.name}
+                    </div>
+                     <div className={`createdBy  ${currentUserId === createdBy.userId && 'row-reverse'}`}>
+                        <div className="imageContainer">
+                            <img src={`${createdBy.avatar || 'assets/images/avatar2.png'}`} alt="group" />
+                        </div>
+                        <div className="info">
+                            <div className="name">{createdBy.name}</div>
+                            <div>{createdBy.date}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className={`absolute messageFooter ${currentUserId === createdBy.userId && 'row-reverse'}`}>
+                <div className={`avatar  ${currentUserId === createdBy.userId && 'row-reverse'}`}>
+                    <img src={`${createdBy.avatar || 'assets/images/avatar2.png'}`} alt="group" />
+                    <p>{createdBy.time}</p>
+                </div>
+                <p className='name'>{createdBy.name}</p>
             </div>
         </div>
     )
 }
-
 export default Action;

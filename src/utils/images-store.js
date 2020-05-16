@@ -3,6 +3,7 @@ import { ReactComponent as ConversationIcon } from './../assets/images/conversat
 import { ReactComponent as ContactsIcon } from './../assets/images/contacts.svg';
 import { ReactComponent as SettingIcon } from './../assets/images/setting.svg';
 import { ReactComponent as SearchIcon } from './../assets/images/search.svg';
+import { ReactComponent as SendIcon } from './../assets/images/send.svg';
 
 export {
     HomeIcon,
@@ -10,4 +11,5 @@ export {
     ContactsIcon,
     SettingIcon,
     SearchIcon,
+    SendIcon
 };
