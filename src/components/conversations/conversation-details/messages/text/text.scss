@@ -1,0 +1,15 @@
+.text {
+    background: #ebf3f3;
+    color: #546566;
+    font-size: 12px;
+    max-width: 535px;
+    display: flex;
+    align-items: center;
+    padding: 15px 24px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    &.me {
+        background: #e7e7e7;
+    }
+}

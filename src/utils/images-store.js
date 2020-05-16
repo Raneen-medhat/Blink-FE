@@ -9,5 +9,5 @@ export {
     ConversationIcon,
     ContactsIcon,
     SettingIcon,
-    SearchIcon
+    SearchIcon,
 };

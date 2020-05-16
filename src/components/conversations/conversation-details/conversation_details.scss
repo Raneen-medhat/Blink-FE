@@ -27,3 +27,16 @@
         }
     }
 }
+.conversationContent{
+    padding: 0 24px;
+    .newAdded {
+        font-size: 12px;
+        margin-bottom: 10px;
+        span {
+            color: #182627;
+            padding: 0 10px;
+            font-weight: lighter;
+        }
+    }
+
+}
