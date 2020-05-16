@@ -8,15 +8,15 @@ const Conversation = (props) => {
                 <img src={avatar} alt='Avatar' />
             </div>
             <div className="conversation-info">
-                <div className="header">
-                    <div className="name">
+                <div className="header ">
+                    <div className="name gothamBook">
                         {isGroup ? groupName : senderName}
                     </div>
                     <div className="date"> {date ? date : '---'} </div>
                 </div>
-               {isGroup && <div className="senderName">{senderName}</div>}
+               {isGroup && <div className="senderName gothamBook">{senderName}</div>}
                 <div className="message-wrapper">
-                    <div className="content">{message}</div>
+                    <div className="content gothamBook">{message}</div>
                     {numberOfMessages && <div className="number">{numberOfMessages}</div>}
                 </div>
             </div>

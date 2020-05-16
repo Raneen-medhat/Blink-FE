@@ -10,7 +10,7 @@
     }
     &:hover {
        background: #5bafb433;
-       transition: ease-in 1s;
+       transition: ease-in 0.2s;
     }
     .image-container {
         height: 45px;
@@ -25,6 +25,7 @@
         .header {
             display: flex;
             justify-content: space-between;
+            margin-bottom: 3px;
             .name {
                 font-size: 15px;
                 color: #666666;
@@ -38,13 +39,14 @@
                 color: #666666;
                 font-style: italic;
                 font-size: 12px;
+                margin-bottom: 3px;
         }
         .message-wrapper {
             display: flex;
             justify-content: space-between;
             .content {
                 color: #9b9f9f;
-                font-size: 15px;
+                font-size: 13px;
             }
             .number{
                 background: #608a8b;

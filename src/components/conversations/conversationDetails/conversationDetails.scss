@@ -1,0 +1,97 @@
+@import './../../../scss/variables';
+#conversationDetails {
+    flex: 1;
+    .header {
+        background: $primary_color;
+        color: $white_color;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 56px;
+        padding: 0 20px;
+    }
+    .icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px;
+        .icon {
+            height: 25px;
+            cursor: pointer;
+            margin: 0 10px;
+            &:hover {
+                transform: scale(.9);
+                transition: ease-in 0.3s;
+            }
+        }
+    }
+}
+.conversationContent{
+    padding: 0 24px;
+    overflow-y: auto;
+    height: calc( 100vh - 135px);
+    .newAdded {
+        font-size: 12px;
+        margin-bottom: 10px;
+        span {
+            color: #182627;
+            padding: 0 10px;
+            font-weight: lighter;
+        }
+    }
+
+}
+
+.conversationFooter {
+    background: #eee; 
+    padding: 20px; 
+    position: fixed; 
+    bottom: 0; 
+    z-index: 1; 
+    right: 0; 
+    left: 445px;
+    .conversationFooter-content {
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+        .add {
+            background: #fff; 
+            width: 30px; 
+            height: 30px; 
+            border-radius: 50%; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            cursor: pointer; 
+            color: #666666; 
+            font-size: 20px;
+            &:hover {
+                transform: scale(0.9);
+                transition: ease-in-out 0.2s;
+            }
+        }
+        input {
+            border: 0;
+            border-radius: 10px;
+            height: 25px; 
+            width: calc(100% - 100px); 
+            padding: 7px; 
+            &:focus {
+                outline: 0;
+            }
+        }
+        button {
+            background: transparent;
+            border: none;
+            .icon {
+                width: 30px;
+                color: #5bafb4;
+                cursor: pointer;
+            }
+            &:hover {
+                transform: scale(0.9);
+                transition: ease-in-out 0.2s;
+            }
+        }
+    }
+}

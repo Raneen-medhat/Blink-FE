@@ -26,8 +26,7 @@ body {
     color: #666666;
     margin-left: -40px;
     &.me {
-        margin-left: 0;
-        margin-right: -40px;
+        margin-left: 40px;
     } 
     .avatar {
         display: flex;
@@ -35,6 +34,12 @@ body {
         img {
             width: 20px;
             margin: 0 10px;
+        }
+    }
+    .name {
+        margin-left: 40px;
+        &.mine {
+            margin-left: -40px;
         }
     }
 }
@@ -59,3 +64,5 @@ body {
     background: #eeeeee;
   }
   
+
+ 
