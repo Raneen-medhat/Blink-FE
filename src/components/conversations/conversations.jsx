@@ -1,5 +1,5 @@
 import React from 'react';
-import { ReactComponent as ConversationIcon } from './../../assets/images/conversation.svg';
+import { ConversationIcon } from './../../utils/images-store';
 import { conversationsList } from './../../utils/data-source';
 import Conversation from './conversation/conversation';
 import './conversations.scss';

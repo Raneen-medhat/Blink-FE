@@ -9,7 +9,7 @@ export const conversationsList = [
         message: 'Sed mollis mi iaculis tincidu...',
         numberOfMessages: 2,
         date: 'Oct 12',
-        avatar: '../../../assets/images/avatar.png'
+        avatar: 'assets/images/avatar.png'
     },
     {
         id: 2,
@@ -18,7 +18,7 @@ export const conversationsList = [
         message: 'Sed mollis mi iaculis tincidu...',
         numberOfMessages: null,
         date: 'Sep 30',
-        avatar: '../../../assets/images/avatar.png'
+        avatar: 'assets/images/avatar.png'
     },
     {
         id: 3,
@@ -27,7 +27,7 @@ export const conversationsList = [
         message: 'Sed mollis mi iaculis tincidu...',
         numberOfMessages: null,
         date: 'Sep 30',
-        avatar: '../../../assets/images/avatar.png'
+        avatar: 'assets/images/avatar.png'
     },
     {
         id: 4,
@@ -36,7 +36,7 @@ export const conversationsList = [
         message: 'Sed mollis mi iaculis tincidu...',
         numberOfMessages: 20,
         date: 'Sep 30',
-        avatar: '../../../assets/images/avatar.png'
+        avatar: 'assets/images/avatar.png'
     },
     {
         id: 5,
@@ -46,7 +46,7 @@ export const conversationsList = [
         message: 'Sed mollis mi iaculis tincidu...',
         numberOfMessages: null,
         date: 'Sep 30',
-        avatar: '../../../assets/images/avatar.png'
+        avatar: 'assets/images/avatar.png'
     },
     {
         id: 6,
@@ -56,7 +56,7 @@ export const conversationsList = [
         message: 'Sed mollis mi iaculis tincidu...',
         numberOfMessages: null,
         date: 'Sep 30',
-        avatar: '../../../assets/images/avatar.png'
+        avatar: 'assets/images/avatar.png'
     },
     {
         id: 7,
@@ -65,7 +65,7 @@ export const conversationsList = [
         message: 'Sed mollis mi iaculis tincidu...',
         numberOfMessages: null,
         date: 'Sep 30',
-        avatar: '../../../assets/images/avatar.png'
+        avatar: 'assets/images/avatar.png'
     },
     {
         id: 8,
@@ -74,7 +74,7 @@ export const conversationsList = [
         message: 'Sed mollis mi iaculis tincidu...',
         numberOfMessages: null,
         date: 'Sep 30',
-        avatar: '../../../assets/images/avatar.png'
+        avatar: 'assets/images/avatar.png'
     },
     {
         id: 9,
@@ -84,7 +84,7 @@ export const conversationsList = [
         message: 'Sed mollis mi iaculis tincidu...',
         numberOfMessages: null,
         date: 'Sep 30',
-        avatar: '../../../assets/images/avatar.png'
+        avatar: 'assets/images/avatar.png'
     },
     {
         id: 10,
@@ -93,7 +93,7 @@ export const conversationsList = [
         message: 'Sed mollis mi iaculis tincidu...',
         numberOfMessages: null,
         date: 'Sep 30',
-        avatar: '../../../assets/images/avatar.png'
+        avatar: 'assets/images/avatar.png'
     },
     {
         id: 11,
@@ -102,6 +102,6 @@ export const conversationsList = [
         message: 'Sed mollis mi iaculis tincidu...',
         numberOfMessages: null,
         date: 'Sep 30',
-        avatar: '../../../assets/images/avatar.png'
+        avatar: 'assets/images/avatar.png'
     },
 ]

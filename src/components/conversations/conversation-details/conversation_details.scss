@@ -1,0 +1,29 @@
+@import './../../../scss/variables';
+#conversationDetails {
+    flex: 1;
+    .header {
+        background: $primary_color;
+        color: $white_color;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 56px;
+        padding: 0 20px;
+    }
+    .icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px;
+        .icon {
+            height: 25px;
+            cursor: pointer;
+            margin: 0 10px;
+            &:hover {
+                transform: scale(.9);
+                transition: ease-in 0.3s;
+            }
+        }
+    }
+}
