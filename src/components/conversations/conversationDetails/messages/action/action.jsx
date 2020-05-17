@@ -39,7 +39,9 @@ const Action = (props) => {
                     <img src={`${createdBy.avatar || 'assets/images/avatar2.png'}`} alt="group" />
                     <p>{createdBy.time}</p>
                 </div>
-                <p  className={`${currentUserId === createdBy.userId ? 'mine' : 'name'}`}>{createdBy.name}</p>
+                <p  className={`${currentUserId === createdBy.userId ? 'mine' : 'name'}`}>
+                    {currentUserId === createdBy.userId ? 'me' : createdBy.name}
+                </p>
             </div>
         </div>
     )
