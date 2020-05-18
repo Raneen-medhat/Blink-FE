@@ -34,6 +34,7 @@ body {
         img {
             width: 25px;
             margin: 0 10px;
+            border-radius: 50%;
         }
     }
     .name {
@@ -61,6 +62,25 @@ body {
   }
   
   ::-webkit-scrollbar-thumb:hover {
+    background: #eeeeee;
+  }
+
+    /* width */
+::-moz-scrollbar {
+    width: 7px;
+  }
+  
+  // Scroll bar
+  ::-moz-scrollbar-track {
+    background: #eeeeee;
+  }
+  
+  ::-moz-scrollbar-thumb {
+    background: #c6d3d5;
+    border-radius: 4px;
+  }
+  
+  ::-moz-scrollbar-thumb:hover {
     background: #eeeeee;
   }
   

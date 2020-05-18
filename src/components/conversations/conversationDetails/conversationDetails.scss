@@ -30,6 +30,8 @@
     padding: 0 24px;
     overflow-y: auto;
     height: calc( 100vh - 135px);
+    scrollbar-color: #c6d3d5;
+    scrollbar-width: thin;
     .newAdded {
         font-size: 12px;
         margin-bottom: 10px;

@@ -9,7 +9,7 @@ export const conversationsList = [
         message: 'Sed mollis mi iaculis tincidu...',
         numberOfMessages: 2,
         date: 'Oct 12',
-        avatar: 'assets/images/avatar.png'
+        avatar: 'https://s3.amazonaws.com/uifaces/faces/twitter/sweetdelisa/128.jpg'
     },
     {
         id: 2,
@@ -18,7 +18,7 @@ export const conversationsList = [
         message: 'Sed mollis mi iaculis tincidu...',
         numberOfMessages: null,
         date: 'Sep 30',
-        avatar: 'assets/images/avatar.png'
+        avatar: 'https://s3.amazonaws.com/uifaces/faces/twitter/mvdheuvel/128.jpg'
     },
     {
         id: 3,
@@ -27,7 +27,7 @@ export const conversationsList = [
         message: 'Sed mollis mi iaculis tincidu...',
         numberOfMessages: null,
         date: 'Sep 30',
-        avatar: 'assets/images/avatar.png'
+        avatar: 'https://s3.amazonaws.com/uifaces/faces/twitter/Karimmove/128.jpg'
     },
     {
         id: 4,
@@ -36,7 +36,7 @@ export const conversationsList = [
         message: 'Sed mollis mi iaculis tincidu...',
         numberOfMessages: 20,
         date: 'Sep 30',
-        avatar: 'assets/images/avatar.png'
+        avatar: 'https://s3.amazonaws.com/uifaces/faces/twitter/mikemai2awesome/128.jpg'
     },
     {
         id: 5,
@@ -46,7 +46,7 @@ export const conversationsList = [
         message: 'Sed mollis mi iaculis tincidu...',
         numberOfMessages: null,
         date: 'Sep 30',
-        avatar: 'assets/images/avatar.png'
+        avatar: 'https://s3.amazonaws.com/uifaces/faces/twitter/reetajayendra/128.jpg'
     },
     {
         id: 6,
@@ -56,7 +56,7 @@ export const conversationsList = [
         message: 'Sed mollis mi iaculis tincidu...',
         numberOfMessages: null,
         date: 'Sep 30',
-        avatar: 'assets/images/avatar.png'
+        avatar: 'https://s3.amazonaws.com/uifaces/faces/twitter/perfectflow/128.jpg'
     },
     {
         id: 7,
@@ -65,7 +65,7 @@ export const conversationsList = [
         message: 'Sed mollis mi iaculis tincidu...',
         numberOfMessages: null,
         date: 'Sep 30',
-        avatar: 'assets/images/avatar.png'
+        avatar: 'https://s3.amazonaws.com/uifaces/faces/twitter/Elt_n/128.jpg'
     },
     {
         id: 8,
@@ -74,7 +74,7 @@ export const conversationsList = [
         message: 'Sed mollis mi iaculis tincidu...',
         numberOfMessages: null,
         date: 'Sep 30',
-        avatar: 'assets/images/avatar.png'
+        avatar: 'https://s3.amazonaws.com/uifaces/faces/twitter/kaelifa/128.jpg'
     },
     {
         id: 9,
@@ -84,7 +84,7 @@ export const conversationsList = [
         message: 'Sed mollis mi iaculis tincidu...',
         numberOfMessages: null,
         date: 'Sep 30',
-        avatar: 'assets/images/avatar.png'
+        avatar: 'https://s3.amazonaws.com/uifaces/faces/twitter/itskawsar/128.jpg'
     },
     {
         id: 10,
@@ -93,7 +93,7 @@ export const conversationsList = [
         message: 'Sed mollis mi iaculis tincidu...',
         numberOfMessages: null,
         date: 'Sep 30',
-        avatar: 'assets/images/avatar.png'
+        avatar: 'https://s3.amazonaws.com/uifaces/faces/twitter/darylws/128.jpg'
     },
     {
         id: 11,
@@ -102,7 +102,7 @@ export const conversationsList = [
         message: 'Sed mollis mi iaculis tincidu...',
         numberOfMessages: null,
         date: 'Sep 30',
-        avatar: 'assets/images/avatar.png'
+        avatar: 'https://s3.amazonaws.com/uifaces/faces/twitter/mizko/128.jpg'
     },
 ]
 export const conversationDetails = [
@@ -123,7 +123,7 @@ export const conversationDetails = [
                 name: 'Derek Smith completed',
                 date: 'Mar 23 3:23p',
                 time: '12:20pm',
-                avatar: null
+                avatar: 'https://s3.amazonaws.com/uifaces/faces/twitter/cynthiasavard/128.jpg'
             }
         }
     },
@@ -143,7 +143,8 @@ export const conversationDetails = [
                 userId: 2,
                 name: 'SK',
                 date: 'Mar 23 3:23p',
-                time: '9:12am'
+                time: '9:12am',
+                avatar: 'https://s3.amazonaws.com/uifaces/faces/twitter/maz/128.jpg'
             }
         }
     },
@@ -156,7 +157,8 @@ export const conversationDetails = [
                 userId: 3,
                 name: 'SK',
                 date: 'Mar 23 3:23p',
-                time: '11:58am'
+                time: '11:58am',
+                avatar: 'https://s3.amazonaws.com/uifaces/faces/twitter/michaelmartinho/128.jpg'
             }
         }
     },
@@ -169,7 +171,8 @@ export const conversationDetails = [
                 userId: 1,
                 name: 'Derek Smith completed',
                 date: 'Mar 23 3:23p',
-                time: '1:45pm'
+                time: '1:45pm',
+                avatar: 'https://s3.amazonaws.com/uifaces/faces/twitter/cynthiasavard/128.jpg'
             }
         }
     }
