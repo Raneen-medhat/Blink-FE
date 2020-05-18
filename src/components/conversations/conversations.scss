@@ -20,5 +20,7 @@
     .conversation-list{
         overflow-y: auto;
         height: calc( 100vh - 56px);
+        scrollbar-color: #c6d3d5;
+        scrollbar-width: thin;
     }
 }
